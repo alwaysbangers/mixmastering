@@ -26,7 +26,7 @@ a:hover{color:#64b5f6}
 #header a:hover::before{opacity:1}
 #header a::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(27,21,39,.50);opacity:0;backdrop-filter:blur(5px);transition:opacity 0.3s ease;z-index:1}
 #header a:hover::after{opacity:1}
-#header img{width:100%;height:auto;display:block;border-radius:6px 6px 0 0;max-height:200px;object-fit:cover;min-height:120px;transition:transform 0.3s ease;z-index:0}
+#header img{width:100%;height:auto;display:block;border-radius:6px 6px 0 0;max-height:200px;object-fit:cover;min-height:120px;transition:transform 0.3s ease;z-index:0;text-align: center}
 .header-lines-overlay {position: absolute;inset: 0;width: 100%;height: 100%;object-fit: cover;z-index: 1;pointer-events: none;mix-blend-mode: screen;animation: MysteriousNeonPulse 6.5s ease-in-out infinite}
 @keyframes MysteriousNeonPulse {0% {opacity: 0;transform: scale(1);}15% {opacity: 0;}35% {transform: scale(1.015);}50% {opacity: 1;transform: scale(1);}65% {transform: scale(1.01);}85% {opacity: 0;transform: scale(1);}100% {opacity: 0}}
 #nav-menu{background:#222!important;border-radius:0 0 8px 8px!important;padding:9px 0 7px!important;display:flex!important;justify-content:center!important;flex-wrap:wrap!important;gap:15px!important;border:1px solid #333!important;border-top:none!important}
@@ -35,7 +35,7 @@ a:hover{color:#64b5f6}
 @media (max-width:535px){#nav-menu{gap:8px!important;padding:6px 0!important}#nav-menu a{padding:4px 9px!important;font-size:.84rem!important}}
 @media (max-width:435px){#nav-menu{gap:4px!important}#nav-menu a{padding:2px 6px!important;font-size:.81rem!important}}
 .top-section{margin:20px 0 7px 0;min-height:90px;background:#1e1e1e;border-radius:8px;border:1px solid #2d2d2d;padding:18px 15px 15px 15px;display:flex;gap:15px;justify-content:center;align-items:center;flex-wrap:wrap}
-.top-section a{flex:1;min-width:300px;max-width:calc(50% - 8px);display:block;position:relative;overflow:hidden;border-radius:8px}
+.top-section a{flex:1;min-width:300px;max-width:calc(50% - 8px);display:block;position:relative;overflow:hidden;border-radius:8px;text-align: center}
 .top-section a::before{content:attr(data-text);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;font-size:0.9rem;font-weight:500;opacity:0;transition:opacity 0.3s ease;z-index:2;text-shadow:0 2px 8px rgba(0,0,0,0.8);white-space:nowrap;background:linear-gradient(135deg,rgba(87, 87, 87, 0.95) 0%,rgba(0, 0, 0, 0.95) 100%);padding:5px 10px;border-radius:8px}
 .top-section a:hover::before{opacity:1}
 .top-section a::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(61, 61, 61, 0.5);opacity:0;backdrop-filter:blur(5px);;backdrop-filter:blur(3px);opacity:0;transition:opacity 0.3s ease;z-index:1}
