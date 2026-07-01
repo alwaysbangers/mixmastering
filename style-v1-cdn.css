@@ -225,7 +225,7 @@ a:hover{color:#64b5f6}
 .rec-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 15px;
     padding-bottom: 12px;
     border-bottom: 2px solid #2a2a2a;
@@ -239,6 +239,7 @@ a:hover{color:#64b5f6}
 
 .rec-star-icon {
     flex-shrink: 0;
+    order: -1;
 }
 
 .rec-refresh {
@@ -263,22 +264,16 @@ a:hover{color:#64b5f6}
     border-color: #4a4a4a;
 }
 
-.rec-refresh.rec-pulse {
-    animation: recPulse 0.75s ease;
+.rec-refresh.rec-pulse svg {
+    animation: recSpin 0.75s ease;
 }
 
-@keyframes recPulse {
+@keyframes recSpin {
     0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(100, 181, 246, 0.7);
-    }
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 0 8px rgba(100, 181, 246, 0);
+        transform: rotate(0deg);
     }
     100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(100, 181, 246, 0);
+        transform: rotate(360deg);
     }
 }
 
@@ -315,20 +310,49 @@ a:hover{color:#64b5f6}
     box-shadow: 0 4px 12px rgba(100, 181, 246, 0.3);
 }
 
+.rec-img-link:hover .rec-img {
+    filter: brightness(0.6);
+}
+
+.rec-img-link:hover .rec-link-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .rec-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
-.rec-img-link:hover .rec-img {
-    transform: scale(1.05);
+.rec-link-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.rec-link-icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: #ffffff;
+    fill: none;
 }
 
 .rec-post-title {
     font-size: 11px;
-    margin: 8px 0 0 0;
+    margin: 11px 0 0 0;
     line-height: 1.4;
     text-align: center;
     max-width: 180px;
@@ -354,7 +378,7 @@ a:hover{color:#64b5f6}
     display: none;
     flex-direction: column;
     gap: 8px;
-    padding: 12px;
+    padding: 6px;
     background: rgba(244, 67, 54, 0.1);
     border: 1px solid rgba(244, 67, 54, 0.3);
     border-radius: 8px;
