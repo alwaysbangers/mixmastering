@@ -210,4 +210,10 @@ window.blogDatabase = [
         number: "35",
         tags: ["Software", "P2P", "Music"]
     },
+    {
+        "title": "سمپل صدای حیوانات Ovani Sound Animals Sound FX",
+        "image": "https://s34.picofile.com/file/8488935018/Ovani_Sound_Animals_Sound_FX_Pack_WAV.jpg",
+        "number": "36",
+        "tags": ["Sample", "WAV", "Sound"]
+    },
 ];
