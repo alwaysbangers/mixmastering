@@ -216,4 +216,15 @@ window.blogDatabase = [
         "number": "36",
         "tags": ["Sample", "WAV", "Sound"]
     },
+    {
+        "title": "پکیج لوپ بیس Diego Bustamante Bassline Tools Vol.1",
+        "image": "https://s34.picofile.com/file/8488935026/Diego_Bustamante_Bassline_Tools_Vol_1_WAV_FANTASTiC.jpg",
+        "number": "37",
+        "tags": ["Sample", "WAV", "Hip Hop"]
+    },
+    {
+        "title": "کدام نرم افزار برای میکس و دیجی بهتره؟",
+        "number": "38",
+        "tags": ["Gallery", "DJ", "Software"]
+    },
 ];
